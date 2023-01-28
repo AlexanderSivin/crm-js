@@ -1,0 +1,29 @@
+.preloader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 72px;
+  height: 72px;
+  animation: ring-spin 1000ms infinite linear;
+}
+
+@keyframes ring-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
